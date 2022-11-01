@@ -6,83 +6,382 @@ layout: layouts/base.njk
 {% import "components/ticker.njk" as ticker %}
 {% import "components/section-heading.njk" as section %}
 {% import "components/zinger-cta.njk" as zinger %}
-
 <section class="my-10 p-0">
   {{ ticker.icons() }}
   {{ ticker.main() }}
 </section>
-
-<section class="relative p-10 mb-16">
-  <div class="p-2 rounded-lg bg-gradient-jams" w-full>
-    <div class="flex flex-col bg-blue-900 p-10 text-xl">
-      <a class="border-b-0" name="what-is-jamstack">
-        <h1>What is <span class="font-extrabold text-transparent bg-clip-text bg-gradient-jams">Jamstack</span>?</h1>
-      </a>
-      <p>
-        Jamstack is an architectural approach that decouples the web experience layer from data and business logic, improving flexibility, scalability, performance, and maintainability.
-      </p>
-      <p>
-        Jamstack removes the need for business logic to dictate the web experience.
-      </p>
-      <p>
-        It enables a composable architecture for the web where custom logic and 3rd party services are consumed through APIs.</p>
-      </p>
-    </div>
-  </div>
-</section>
-<section class="relative p-10 mb-16">
-  <div class="p-2 rounded-lg bg-gradient-jams" w-full>
-    <div class="flex flex-col bg-blue-900 p-10 text-xl">
-      <a class="border-b-0" name="what-is-jamstack">
-        <h1>What is <span class="font-extrabold text-transparent bg-clip-text bg-gradient-jams">Jamstack Kolachi</span>?</h1>
-      </a>
-      <p>
-       This group wants to hold big Jamstack-related community events in Karachi, both online and in person, for JavaScript enthusiasts.
-      </p>
-      <p>
-      This is the first event of its kind in Pakistan, and we hope to create a vibrant tech community by hosting inspiring jamstacks and collaborating with our fellow developers to create game-changing applications.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="mb-10">
-  <div class="border-2 border-white block rounded-xl shadow-lg text-center overflow-hidden">
-    <a href="/conf/">
-      <img src="/img/conf-2022-tout-new.png" alt="Jamstack Conf 2022, 7-8 November, San Francisco and online" width="1500" height="600" />
-    </a>
-    <h2 class="mt-8">Join us at Jamstack Conf!</h2>
-    <p class="text-lg md:text-xl mb-5 w-2/3 md:w-1/2 mx-auto">
-      Join 20,000+ web developers for two days dedicated to building modern web projects.
-    </p>
-    <p class="mb-5">
-      <a href="/conf/" class="cta">Attend Jamstack Conf</a>
-    </p>
-  </div>
-</section>
-<section class="mb-10">
-  <div class="border-2 border-white block rounded-xl shadow-lg text-center overflow-hidden">
-    <a href="/conf/">
-      <img src="/img/KOLACHI_SPONSOR.png" alt="Jamstack Conf 2022, 7-8 November, San Francisco and online" width="1500" height="600" />
-    </a>
- 
-   
-  </div>
-</section>
-
-{% include "components/join-the-movement.njk" %}
-
-<section class=" mb-16">
-  <div class="md:w-8/12 mx-auto">
-    <h2>The Roots of Jamstack</h2>
-    <p class="mt-6 mb-8">
-      <a href="https://www.netlify.com/authors/matt-biilmann/">Matt Biilmann</a> took the concept of Jamstack mainstream with his presentation at Smashing Conf 2016. Watch the quintessential introduction to the Jamstack.
-    </p>
-    <div class="videowrapper mb-8">
-      <div data-lazyiframe src="https://player.vimeo.com/video/163522126?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="Mathias Biilmann Smashing Conf 2016 talk video: The New Front-End Stack">
-        <a href="https://vimeo.com/163522126">Watch <em>Mathias Biilmann Smashing Conf 2016 talk video: The New Front-End Stack</em> on Vimeo</a>
+<section>
+  <div class="flex text-xs-center pa-3 xs12 sm5 md3 lg3 xl3">
+    <div class="v-responsive v-image">
+      <div class="v-image__image v-image__image--cover">
+        <img src="../img/logo/svg/logo.jpeg" width="
+                    150px" height="
+                    150px" title="
+                  "/>
       </div>
     </div>
-    <a href="/resources/" class="cta">See more videos and resources</a>
-  </div>
-</section>
+    <div class="
+                  xs12
+                  sm7
+                  md8
+                  lg8
+                  xl8">
+      <p class="google-font mb-1" style="font-weight: 350; color: rgb(97, 97, 97); font-size: 200%;">
+        <b>Make good things
+          <span style="color: rgb(26, 115, 232);">together</span>.</b>
+      </p>
+      <p class="google-font mt-0" style="font-size: 120%;">GDG Kolachi</p>
+      <p class="google-font" style="font-size: 100%;">Google Developers Group Kolachi is an initiative to concentrate the
+        efforts of many developers in and around Karachi to learn, share and get productive using the various Google products.</p>
+      <p class="google-font" style="font-size: 100%; color: rgb(158, 158, 158);">
+        <span>
+          #GDGKolachi &nbsp;
+        </span>
+        <span>
+          #WTMKarachi &nbsp;
+        </span>
+        <span>
+          #GDG &nbsp;
+        </span>
+        <span>
+          #WTM &nbsp;
+        </span>
+      </p>
+      <div class="flex pa-2 xs12 md12 lg12">
+        <a
+          href=""
+          target="_blank"
+          class="cta"
+          style="background-color: rgb(26, 115, 232); border-color: rgb(26, 115, 232); text-transform: capitalize; border-radius:
+            5px; color: white;">
+          <div class="v-btn__content">Become a Member</div>
+        </a>
+        &nbsp; &nbsp;
+        <a href="" target="_blank" class="cta" style="text-transform: capitalize; border-radius: 5px;">
+          <div class="v-btn__content">Learn More</div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="layout wrap align-center justify-center row fill-height">
+        <div class="flex xs12 md10">
+          <div class="container pa-0">
+            <div class="layout wrap align-center justify-center row fill-height">
+              <p class="google-font" style="font-size: 180%;">What we do?</p>
+              <p class="google-font" style="font-size: 110%;">Google Developer Groups (GDGs) are for developers who are interested in
+                Google's developer technology.</p>
+              <p class="google-font" style="font-size: 110%;">About different Google technologies</p>
+              <div class="flex mt-2">
+                <span class="svgR-p">
+                  <a href="https://angular.io/" target="_blank" flat="" class="ma-0">
+                    <svg width="2353" height="2500" viewBox="0 0 256 272" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M.1 45.522L125.908.697l129.196 44.028-20.919 166.45-108.277 59.966-106.583-59.169L.1 45.522z" fill="#E23237"/><path d="M255.104 44.725L125.908.697v270.444l108.277-59.866 20.919-166.55z" fill="#B52E31"/><path
+                        d="M126.107 32.274L47.714 206.693l29.285-.498 15.739-39.347h70.325l17.233 39.845 27.99.498-82.179-174.917zm.2
+                          55.882l26.496 55.383h-49.806l23.31-55.383z"
+                        fill="#FFF"/>
+                    </svg>
+                  </span>
+                  <span class="svgR-p">
+                    <a href="https://www.android.com/" target="_blank" flat="" class="ma-0">
+                      <img src="../img/aog.png" width="30vh" alt="" srcset="" dark=""></a>
+                    </span>
+                    <span class="svgR-p">
+                      <a href="https://developers.google.com/actions/" target="_blank" flat="" class="ma-0">
+                        <img src="/img/aog.e2ff2fe8.png" width="30vh" alt="" srcset="" dark=""></a>
+                      </span>
+                    </div>
+                    <br>
+                      <br>
+                        <a
+                          href="https://developers.google.com/programs/community/"
+                          target="_blank"
+                          class="ml-0 google-font hidden-md-and-down v-btn v-btn--flat v-btn--outline v-btn--depressed v-btn--round theme--dark
+                            cyan--text"
+                          style="text-transform: capitalize; border-radius: 5px;"></a>
+                      </div>
+                      <div class="pa-2 xs12 md3 lg3">
+                        <div class="flex text-center layout row wrap">
+                          <div class="backgroundBg text-xs-center pa-2 xs6 sm6 md3 lg3">
+                            <svg
+                              class="matchSvg"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="30px"
+                              height="30px"
+                              fill="currentColor"
+                              class="bi bi-chat-left-fill"
+                              viewBox="0 0 16 16">
+                              <path d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                            </svg>
+                            <p class="google-font" style="font-size: 110%;">Talks</p>
+                            <p class="google-font " style="font-size: 110%;">Get updated with the latest news and announcements</p>
+                          </div>
+                          <div class="backgroundBg text-xs-center pa-2 xs6 sm6 md3 lg3 mb-3  ">
+                            <svg
+                              class="matchSvg"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="30px"
+                              height="30px"
+                              fill="currentColor"
+                              class="bi bi-code"
+                              viewBox="0 0 16 16">
+                              <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292
+                              0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+                            </svg>
+                            <p class="google-font" style="font-size: 110%;">Codelabs</p>
+                            <p class="google-font" style="font-size: 110%;">Get hands-on experience and guidance from the community members</p>
+                          </div>
+                        </div>
+                        <div class="flex text-center xs12 md9 lg9">
+                          <div class="backgroundBg  text-xs-center pa-2 xs6 sm6 md3 lg3">
+                            <svg
+                              class="matchSvg"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="30px"
+                              height="30px"
+                              fill="currentColor"
+                              class="bi bi-7-square-fill"
+                              viewBox="0 0 16 16">
+                              <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm3.37 5.11V4.001h5.308V5.15L7.42
+                              12H6.025l3.317-6.82v-.07H5.369Z"/>
+                            </svg>
+                            <p class="google-font" style="font-size: 110%;">Campus Roadshows</p>
+                            <p class="google-font" style="font-size: 110%;">Share knowledge in different Companies universities</p>
+                          </div>
+                          <div class="backgroundBg  text-xs-center pa-2 xs6 sm6 md3 lg3  ">
+                            <svg
+                              class="matchSvg"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="30px"
+                              height="30px"
+                              fill="currentColor"
+                              class="bi bi-window-fullscreen"
+                              viewBox="0 0 16 16">
+                              <path d="M3 3.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z"/>
+                              <path d="M.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5H.5ZM1 5V2h14v3H1Zm0 1h14v8H1V6Z"/>
+                            </svg>
+                            <p class="google-font" style="font-size: 110%;">Live Viewing Parties</p>
+                            <p class="google-font" style="font-size: 110%;">Share knowledge in different Companies, colleges and universities</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="relative p-10 mb-16">
+              <div class="p-2 rounded-lg bg-gradient-jams" w-full>
+                <div class="flex flex-col bg-blue-900 p-10 text-xl">
+                  <a class="border-b-0" name="what-is-jamstack">
+                    <h1>About
+                      <span class="font-extrabold text-transparent bg-clip-text bg-gradient-jams">Jamstack</span>
+                    </h1>
+                  </a>
+                  <p>
+                    Jamstack is an architectural approach that decouples the web experience layer from data and business logic, improving
+                    flexibility, scalability, performance, and maintainability.
+                  </p>
+                  <p>
+                    Jamstack removes the need for business logic to dictate the web experience.
+                  </p>
+                  <p>
+                    It enables a composable architecture for the web where custom logic and 3rd party services are consumed through APIs.</p>
+                </p>
+                <div class="flex pa-2 xs12 md12 lg12">
+                  <a href="" target="_blank" class="cta" style="border-radius: 5px; text-transform: capitalize;">
+                    <div class="v-btn__content">
+                      Meetup Page
+                    </div>
+                  </a>
+                  &nbsp; &nbsp;
+                  <a href="" target="" class="cta" style="border-radius: 5px; text-transform: capitalize;">
+                    <div class="v-btn__content">Facebook Page</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="relative p-10 mb-16">
+            <div class="p-2 rounded-lg bg-gradient-jams" w-full>
+              <div class="flex flex-col bg-blue-900 p-10 text-xl">
+                <a class="border-b-0" name="what-is-jamstack">
+                  <h1>What is
+                    <span class="font-extrabold text-transparent bg-clip-text bg-gradient-jams">Jamstack Kolachi</span>?</h1>
+                </a>
+                <p>
+                  This group wants to hold big Jamstack-related community events in Karachi, both online and in person, for JavaScript
+                  enthusiasts.
+                </p>
+                <p>
+                  This is the first event of its kind in Pakistan, and we hope to create a vibrant tech community by hosting inspiring
+                  jamstacks and collaborating with our fellow developers to create game-changing applications.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="container pa-0"><!----><div class="layout my-3 wrap align-center justify-center row fill-height">
+                <div class="pa-2 text-center xs12 md9 lg9">
+                  <p class="google-font" style="font-size: 170%;">Our Events &amp; Meetups</p>
+                  <p class="google-font" style="font-size: 120%;">At sessions that span from the technical to the visionary, let’s
+                    celebrate and discover what the technologies can enable: how product innovation, open source, and ML and AI can propel
+                    enterprises forward and solve the big problems that impact all of us.</p>
+                  <a href="/events" class="cta ma-0 google-font" flat="" color="#4C4A78">See More</a>
+                </div>
+              </div>
+            </div>
+            <div class="layout hidden-md-and-up mb-3 wrap align-center justify-center row fill-height"><!----><div class="flex xs12"></div>
+            </section>
+            <section class="mb-10">
+              <div class="border-2 border-white block rounded-xl shadow-lg text-center overflow-hidden">
+                <a href="/conf/">
+                  <img
+                    src="/img/conf-2022-tout-new.png"
+                    alt="Jamstack Conf 2022, 7-8 November, San Francisco and online"
+                    width="1500"
+                    height="600"/>
+                </a>
+                <h2 class="mt-8">Join us at Jamstack Conf!</h2>
+                <p class="text-lg md:text-xl mb-5 w-2/3 md:w-1/2 mx-auto">
+                  Join 20,000+ web developers for two days dedicated to building modern web projects.
+                </p>
+                <p class="mb-5">
+                  <a href="/conf/" class="cta">Attend Jamstack Conf</a>
+                </p>
+              </div>
+            </section>
+            <section class="mb-10">
+              <div class="border-2 border-white block rounded-xl shadow-lg text-center overflow-hidden">
+                <a href="/conf/">
+                  <img
+                    src="/img/KOLACHI_SPONSOR.png"
+                    alt="Jamstack Conf 2022, 7E-8 November, San Francisco and online"
+                    width="1500"
+                    height="600"/>
+                </a>
+              </div>
+            </section>
+            <section>
+              <div
+                class="layout mt-2 elevation-2 white wrap align-center justify-center row fill-height"
+                style="border: 1px solid rgb(224, 224, 224); border-radius: 5px;">
+                <div class="flex pa-4 xs12 sm4 md3 lg3">
+                  <div class="v-responsive v-image" style="width: 100%;">
+                    <div class="v-responsive__sizer" style="padding-bottom: 56.875%;"></div>
+                    <div>
+                      <img src="../img/logo/svg/logo.jpeg" title="
+                                "/>
+                    </div>
+                    <div>
+                      <div class="pa-2 py-4 px-3 xs12 sm8 md9 lg9">
+                        <p class="google-font mb-0" style="font-size: 150%; color: rgb(2, 119, 189);">DevFest'19 Karachi</p>
+                        <span class="libran-svg google-font mt-1 mb-0 grey--text" style="font-size: 105%;">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-calendar-event"
+                            viewBox="0 0 16 16">
+                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1
+                            2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                          </svg>
+                          &nbsp;         23/11/2019 
+                                                            &nbsp;  
+                                                                  &nbsp;
+                          <i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size: 16px;">map</i>
+                          IBA City Campus, Saddar Town, Karachi..
+                          <a
+                            href="https://www.google.com/maps/place/IBA+City+Campus/@24.8670319,67.0235937,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb33e6b73f959f7:0x4f97afe42ad1fcbb!8m2!3d24.867027!4d67.0257824"
+                            target="_blank">(Map)</a>
+                        </span>
+                        <p class="google-font pvn-pera mt-2 mb-1" style="font-size: 115% ">
+                          Google Developer Groups(GDG) DevFests are large, community-run events that offer speaker sessions across multiple
+                          product areas, workshops, networking sessions, and more. Each DevFest is tailored by the GDG as per the needs of the
+                          local community. GDG DevFest Karachi 2019 is a free event with a limited number of seats. If you get shortlisted, you
+                          will receive a confirmation message. We highly recommend all professionals/students to please talk to your
+                          employer/professor for a leave before registering for GDG DevFest, as your attendance is what lights up the conference
+                          and we don't want to miss you! We invite all developers, entrepreneurs and tech enthusiasts to join us for this one of a
+                          kind Developer Festival(DevFest), to connect, learn and share!
+                        </p>
+                        <a
+                          href="https://forms.gle/gwo21LfgznUPizej9"
+                          target="_blank"
+                          class="ma-0 elevation-0 my-2 v-btn theme--dark"
+                          style="background-color: rgb(26, 115, 232); border-color: rgb(26, 115, 232); text-transform: capitalize; border-radius:
+                            5px;">
+                          <div class="v-btn__content">
+                            Registration Link
+                          </div>
+                        </a>
+                        &nbsp;
+                        <span class="v-tooltip v-tooltip--top" slot="activator">
+                          <span>
+                            <a
+                              href="https://gdgkolachi.com/"
+                              target="_blank"
+                              class="ma-0 elevation-0 v-btn v-btn--flat v-btn--icon theme--light"
+                              style="color: rgb(97, 97, 97); caret-color: rgb(97, 97, 97); text-transform: capitalize; border-radius: 5px;">
+                              <div class="v-btn__content">
+                                <i aria-hidden="true" class="v-icon material-icons theme--light">language</i>
+                              </div>
+                            </a>
+                          </span>
+                        </span>
+                        <span class="v-tooltip v-tooltip--top" slot="activator">
+                          <span>
+                            <a
+                              href="https://www.meetup.com/GDG-Kolachi/events/265765109/"
+                              target="_blank"
+                              class="ma-0 elevation-0 v-btn v-btn--flat v-btn--icon theme--light"
+                              style="color: rgb(97, 97, 97); caret-color: rgb(97, 97, 97); text-transform: capitalize; border-radius: 5px;">
+                              <div class="v-btn__content">
+                                <i aria-hidden="true" class="v-icon fab fa-meetup theme--light"></i>
+                              </div>
+                            </a>
+                          </span>
+                        </span>
+                        <span class="v-tooltip v-tooltip--top" slot="activator">
+                          <span>
+                            <a
+                              href="https://www.facebook.com/events/js-auditorium-iba-karachi-city-campus/gdg-devfest-karachi-2019/2339906106275053/"
+                              target="_blank"
+                              class="ma-0 elevation-0 v-btn v-btn--flat v-btn--icon theme--light"
+                              style="color: rgb(97, 97, 97); caret-color: rgb(97, 97, 97); text-transform: capitalize; border-radius: 5px;">
+                              <div class="v-btn__content">
+                                <i aria-hidden="true" class="v-icon fab fa-facebook-f theme--light"></i>
+                              </div>
+                            </a>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </section>
+                  {% include "components/join-the-movement.njk" %}<section class=" mb-16">
+                    <div class="md:w-8/12 mx-auto">
+                      <h2>The Roots of Jamstack</h2>
+                      <p class="mt-6 mb-8">
+                        <a href="https://www.netlify.com/authors/matt-biilmann/">Matt Biilmann</a>
+                        took the concept of Jamstack mainstream with his presentation at Smashing Conf 2016. Watch the quintessential
+                        introduction to the Jamstack.
+                      </p>
+                      <div class="videowrapper mb-8">
+                        <div
+                          data-lazyiframe
+                          src="https://player.vimeo.com/video/163522126?title=0&byline=0&portrait=0"
+                          width="640"
+                          height="360"
+                          frameborder="0"
+                          allow="autoplay; fullscreen"
+                          allowfullscreen
+                          title="Mathias Biilmann Smashing Conf 2016 talk video: The New Front-End Stack">
+                          <a href="https://vimeo.com/163522126">Watch
+                            <em>Mathias Biilmann Smashing Conf 2016 talk video: The New Front-End Stack</em>
+                            on Vimeo</a>
+                        </div>
+                      </div>
+                      <a href="/resources/" class="cta">See more videos and resources</a>
+                    </div>
+                  </section>

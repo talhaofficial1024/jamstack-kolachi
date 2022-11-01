@@ -1,3 +1,5 @@
+
+
 .logos-ticker {
   --speed: 90s;
   display: flex;
@@ -6,6 +8,38 @@
   position: relative;
 }
 
+.v-content__wrap {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  max-width: 100%;
+  position: relative;
+}
+.v-content {
+  -webkit-transition: none;
+  transition: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  max-width: 100%;
+}
+
+.logo-vM-Svg {
+  border: 1px solid #ffff;
+    border-radius: 80px;
+    height: 80px;
+    width: 80px;
+}
+.kolachi-Parent {
+  padding: 0px 25px;
+}
+.kolachi-Member {
+  padding: 0px 8px;
+  flex: 1 0 20%;
+}
 .logos-ticker-fade {
   background: linear-gradient(to right, rgba(22, 26, 43, 1) 0%, rgba(22, 26, 43, .01) 20%, rgba(22, 26, 43, .01) 80%, rgba(22, 26, 43, 1) 100%);
   height: 100%;
@@ -22,11 +56,89 @@
   justify-content: center;
   animation: slide var(--speed) linear infinite;
 }
+.fourth-Svg {
+  border: 1px solid red;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
 .logos-ticker-container svg {
   fill: #646E73;
   margin: 0 1.5em;
 }
+.v-responsive {
+  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.matchSvg {
+  margin: auto
+}
 
+.svgR-p a svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 12px;
+}
+
+.backgroundBg {
+   background-color: #c80269;
+   border-radius: 5px;
+   padding:  20px 20px;
+   color: #646E73;
+   margin: 25px 25px;
+   height: 170px;
+   border-radius: 25px 0px 25px 25px;
+   color: #ffff;
+}
+
+.pvn-pera {
+  width:500px; 
+  color: #ffff;
+}
+.libran-svg {
+  display: flex;
+  align-items: center;
+}
+/* 
+.svgR-p a img {
+  width: 25px;
+  height: 25px;
+} */
+
+.listitem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.fourth-Svg {
+  
+}
+.fif-section {
+  display: flex;
+  /* justify-content: space-around; */
+}
+.v-list__tile__sub-title {
+  display: flex;
+  flex-wrap: wrap;
+}
+.third-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.block li a { 
+  width: 268px;
+}
+.v-divider {
+  border-color: #ffff;
+  border-bottom: 1px solid #ffff;
+    height: 20px;
+    width: 100%
+}
+.Team-member {
+
+}
 @keyframes slide {
   0% {
     transform: translate3d(0, 0, 0);
